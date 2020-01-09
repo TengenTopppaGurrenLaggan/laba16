@@ -1,35 +1,29 @@
 {
-  "name": "weblab",
+  "name": "chat",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo npm",
-    "start": "node index.js",
-    "prettier": "prettier --config .prettierrc.json --write .js"
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "husky": {
-    "hooks": {
-      "precommit": "npm run prettier",
-      "prepush": "call npm run lint && call npm run test"
-    }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/TengenTopppaGurrenLaggan/vlad.git"
-  },
-  "keywords": [],
-  "author": "@TengenToppaGurrenLaggan",
+  "keywords": [
+    "chat",
+    "socket.io",
+    "express"
+  ],
+  "author": "TengenTopppaGurrenLaggan",
   "license": "ISC",
-  "devDependencies": {
-    "husky": "^3.1.0",
-    "jshint": "^2.11.0-rc1",
-    "prettier": "^1.19.1"
-  },
   "dependencies": {
-    "eslint": "^6.8.0",
-    "heroku": "^7.35.1",
-    "mocha": "^6.2.2",
-    "travis": "^0.1.1"
+    "bcrypt": "^3.0.7",
+    "bluebird": "^3.7.2",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.8.1",
+    "nunjucks": "^3.2.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "socket.io": "^2.3.0"
   }
 }
