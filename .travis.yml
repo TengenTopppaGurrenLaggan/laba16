@@ -1,8 +1,12 @@
 language: node_js
 node_js:
-  - node
+ - node
 script:
-  - npm test
+ - npm test
 notifications:
-  email: false
-
+ email: false
+deploy:
+  provider: heroku
+  api_key: $key
+  app: tengentopppachat
+  
